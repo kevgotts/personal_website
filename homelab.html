@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kevin Gottschalk</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/logo.png" alt="display logo" style="height: 80px"
+          /></a>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <b><a href="index.html#about">About</a></b>
+          </li>
+          <li>
+            <b><a href="index.html#projects">Projects</a></b>
+          </li>
+          <li>
+            <b><a href="index.html#contact">Contact</a></b>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id=homelab>
+      <h1>VirtualBox Homelab</h1>
+      <div class="description">
+        <p>
+          This project was created to be a sandbox, test environment for any cybersecurity-related projects.
+          It consists of two virtual machines, a Windows Server configured as a domain controller and a Windows 10 client.
+        </p>
+        <p>
+          Both virtual machines were configured with dual network adapters, one using NAT for external internet access
+          and the other using an internal network for isolated communication between the client and server.
+          The server was promoted to a domain controller which allows the client to join the domain and PowerShell was used
+          to create thousands of user accounts, simulating a multi-user network.
+        </p>
+        <h2>Technologies Used:</h2>
+        <p>
+          <u>Networking</u>: NAT configuration, internal routing, static IPs
+        </p>
+        <p>
+          <u>Infrastructure</u>: Active Directory, DNS server, DHCP role 
+        </p>
+        <p>
+          <u>Tools</u>: Oracle VirtualBox, Windows Server 2019+, Windows 10 Pro
+        </p>
+      </div>
+      <div class="game-images">
+        <img src="images/users2.png" alt="users" style="height: 300px; border: 1px solid black"/>
+        <img src="images/internet.png" alt="internet" style="height: 300px"/>
+        <img src="images/diagram.png" alt="diagram" style="height: 300px"/>
+        <img src="images/ipconfig2.png" alt="ipconfig" style="height: 300px"/>
+      </div>
+    </section>
+  </body>
