@@ -6,10 +6,12 @@
 
 :root {
   --primary-color: crimson;
+  --light-color: #a8a8a8;
+  --dark-color: #2c2522;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   background: #fff;
@@ -31,13 +33,13 @@ img {
 /* Util */
 
 .container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 0;
+  padding: 0 10px;
+  border-bottom: 1px solid var(--dark-color);
 }
 
 .container-sm {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -55,7 +57,7 @@ img {
 
 .navbar .container .logo {
   margin-left: 0px;
-  width: 10%;
+  width: 5%;
   height: auto;
 }
 
@@ -71,5 +73,55 @@ img {
 }
 
 .navbar ul li a:hover {
-  color: crimson;
+  color: var(--primary-color);
+}
+
+/* Hero */
+
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero .container-sm {
+  background-image: url("assets/images/laptop.jpg");
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+}
+
+/* Text */
+
+.text-xxl {
+  font-size: 3rem;
+  line_height: 1.2;
+  font_weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line_height: 1.4;
+  font_weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line_height: 1.4;
+  font_weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line_height: 1.4;
+  font_weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line_height: 1.4;
+  font_weight: normal;
+  margin: 10px 0 5px;
 }
