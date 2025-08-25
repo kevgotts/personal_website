@@ -32,10 +32,12 @@ img {
 
 /* Util */
 
+.about {
+}
+
 .container {
   margin: 0;
   padding: 0 10px;
-  border-bottom: 1px solid var(--dark-color);
 }
 
 .container-sm {
@@ -53,6 +55,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--dark-color);
 }
 
 .navbar .container .logo {
@@ -82,11 +85,43 @@ img {
   margin-bottom: 50px;
 }
 
-.hero .container-sm {
-  background-image: url("assets/images/laptop.jpg");
-  background-size: contain;
-  background-position: center bottom;
-  height: 550px;
+.hero-button {
+  text-align: center;
+  align-items: center;
+}
+
+.hero-button a {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  margin-top: 250px;
+  background-color: var(--dark-color);
+  transition: all 0.3s ease;
+}
+
+.hero-button a:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transition: scale(1.1);
+}
+
+.hero .container {
+  background-image: url("../assets/images/space.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+}
+
+.hero-content {
+  color: white;
+  padding-top: 3px;
 }
 
 /* Text */
